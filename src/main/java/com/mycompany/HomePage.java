@@ -41,7 +41,7 @@ public class HomePage extends WebPage {
         Set<String> groupList = new HashSet<String>(Arrays.asList(new String[] { "g1", "g2", "g3" }));
 
         form.add(new Palette("groups", new CollectionModel<String>(selectedGroups),
-                new CollectionModel<String>(groupList), new ChoiceRenderer(), 10, false, true).add(new DefaultTheme()));
+                new CollectionModel<String>(groupList), new ChoiceRenderer("", ""), 10, false, true).add(new DefaultTheme()));
 
         add(form);
     }
